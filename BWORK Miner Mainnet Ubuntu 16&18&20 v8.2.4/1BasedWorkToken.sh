@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 
-#Check for dotnet
+#Check for dotnet   # Verify installation
+   
 if ! command -v dotnet &> /dev/null
 then
     echo "dotnet 5.0 is not found or not installed."
@@ -19,14 +20,45 @@ then
     dotnet --version
 
     echo "dotnet 5.0 is installed. Rerun the script to start."
-
-    goto end
 else
+
+    dotnet_version=$(dotnet --version)
+    if [[ $dotnet_version == 5.* ]]
+    then
+    	echo "Dotnet is installed dont worry about installiing it"
+    else
+	echo "Installing dotnet 5.0 because it isnt installed"
+	
+	
+	
+	
+	echo "dotnet 5.0 is not found or not installed."
+	echo "Installing dotnet 5.0..."
+
+	# Add Microsoft package signing key and repository
+	wget https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+	sudo dpkg -i packages-microsoft-prod.deb
+	sudo apt-get update; \
+	sudo apt-get install -y apt-transport-https && \
+	sudo apt-get update && \
+	sudo apt-get install -y dotnet-sdk-5.0
+
+	# Verify the installation
+	dotnet --version
+
+	echo "dotnet 5.0 is installed. Rerun the script to start."
+
+    
+    
+    
+    
+	exit 1
+    fi
     echo "dotnet 5.0 is already installed."
 fi
+
 
 while : ; do
   dotnet BasedWorkToken.dll
   [[ $? -eq 22 ]] || break
 done
-
