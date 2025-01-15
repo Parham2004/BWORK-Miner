@@ -25,7 +25,7 @@ else
     dotnet_version=$(dotnet --version)
     if [[ $dotnet_version == 5.* ]]
     then
-    	echo "Dotnet is installed dont worry about installiing it"
+    	echo "dotnet 5.0 is installed dont worry about installiing it"
     else
 	echo "Installing dotnet 5.0 because it isnt installed"
 	
