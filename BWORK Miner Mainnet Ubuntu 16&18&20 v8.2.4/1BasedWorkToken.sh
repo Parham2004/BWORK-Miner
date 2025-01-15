@@ -54,7 +54,6 @@ else
     
 	exit 1
     fi
-    echo "dotnet 5.0 is already installed."
 fi
 
 
@@ -62,3 +61,4 @@ while : ; do
   dotnet BasedWorkToken.dll
   [[ $? -eq 22 ]] || break
 done
+
