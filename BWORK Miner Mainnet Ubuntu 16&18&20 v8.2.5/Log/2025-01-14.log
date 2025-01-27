@@ -1,0 +1,31 @@
+
+*** BasedWorkToken 8.2.4 forked from IwYeo's SoliditySHA3Miner - Untouchable2k and crnxhh (2025) ***
+*** Built with .NET 5.0 SDK, VC++ 19.28.29914, gcc 4.8.5, nVidia CUDA SDK 10.2 64-bit, and AMD APP SDK v3.0.130.135 (OpenCL)
+
+Donation addresses:
+ETH (or any ERC 20/918 tokens)	: 0x9172ff7884CEFED19327aDaCe9C470eF1796105c
+BTC                             : 3GS5J5hcG6Qcu9xHWGmJaV5ftWLmZuR255
+LTC                             : LbFkAto1qYt8RdTFHL871H4djendcHyCyB
+
+[2025-01-14T18:20:43] [INFO] King making disabled.
+[2025-01-14T18:20:43] [INFO] Solo mining mode.
+[2025-01-14T18:20:43] CUDA [INFO] Device not specified, default assign all CUDA devices.
+[2025-01-14T18:20:44] OpenCL [INFO] AMD APP device not specified, default assign all AMD APP devices.
+[2025-01-14T18:20:44] [Multiplier] IS: 1
+[2025-01-14T18:20:44] [INFO] Contract address : 0x2f38B1a516239739CdCD2C228D1Eb96E29800975
+[2025-01-14T18:20:44] [INFO] mintToAddress address : 
+[2025-01-14T18:20:44] [INFO] ABI specified, using "BWORK.abi"
+[2025-01-14T18:20:44] [INFO] Gas to mine: 1.32 GWei
+[2025-01-14T18:20:44] [INFO] Gas limit: 1500000
+[2025-01-14T18:20:44] [INFO] Minimum BWORK per Mint: 25
+[2025-01-14T18:20:44] BLOCKS PER READJSTMENT 2016
+[2025-01-14T18:20:44] [INFO] Checking maximum target from network...
+[2025-01-14T18:20:44] CUDA [WARN] NvAPI64 library not found.
+[2025-01-14T18:20:44] CUDA ID: 0 [INFO] Assigning device...
+[2025-01-14T18:20:44] CUDA ID: 0 [INFO] Assigned device (NVIDIA GeForce GTX 1080 Ti)...
+[2025-01-14T18:20:44] CUDA ID: 0 [INFO] Compute capability: 6.1
+[2025-01-14T18:20:44] CUDA ID: 0 [INFO] Intensity: 25.5
+[2025-01-14T18:20:44] CUDA ID: 0 [INFO] Initializing device...
+[2025-01-14T18:20:44] [INFO] JSON-API service started at http://127.0.0.1:4078/...
+[2025-01-14T18:20:44] [INFO] Checking latest parameters from network...
+[2025-01-14T18:20:44] [INFO] ccminer-API service started at 127.0.0.1:4068...
